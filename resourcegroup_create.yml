@@ -1,0 +1,17 @@
+---
+- name: Create Resource Group
+  hosts: localhost
+
+  vars:
+    AZURE_AD_USER: ansible
+    AZURE_PASSWORD: Automate99!
+
+  tasks:
+
+    - name: Create a resource group
+      azure_rm_resourcegroup:
+        name: myResourcegroup
+        location: westus
+        tags:
+            testing: testing
+            delete: never
