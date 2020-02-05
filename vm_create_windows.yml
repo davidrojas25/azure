@@ -13,7 +13,7 @@
   hosts: localhost
   connection: local
   vars:
-    resource_group: "{{ resource_group_name }}"
+    resource_group: rgtest
     vm_name: wintestvm{{ rpfx }}
     vm_user: azureuser
     vm_password: Automate99!
