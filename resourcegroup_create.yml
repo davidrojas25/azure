@@ -5,6 +5,8 @@
   vars:
     rg_name: demoresourcegroup
     location: westus
+    rg_state: present
+    force_option: no
 
   tasks:
 
@@ -12,6 +14,6 @@
       azure_rm_resourcegroup:
         name: "{{ rg_name }}"
         location: "{{ location }}"
-        tags:
-            envrioment: testing
-            delete: never
+        state: "{{ rg_state }}"
+        force: "{{ force_option }}"
+
