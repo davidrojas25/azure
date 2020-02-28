@@ -10,10 +10,10 @@
 
   tasks:
 
-    - name: Create a resource group
-      azure_rm_resourcegroup:
-        name: "{{ rg_name }}"
-        location: "{{ location }}"
-        state: "{{ rg_state }}"
-        force: "{{ force_option }}"
+   - name: Create a resource group
+     azure_rm_resourcegroup:
+       name: "{{ rg_name }}"
+       location: "{{ location }}"
+       state: "{{ rg_state }}"
+       force: "{{ force_option }}"
 
